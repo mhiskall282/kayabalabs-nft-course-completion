@@ -140,3 +140,14 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
             string memory details,
             address owner
         ) 
+
+
+         {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        return (
+            tokenAchievements[tokenId],
+            achievementDetails[tokenId],
+            ownerOf(tokenId)
+        );
+    }
+    
