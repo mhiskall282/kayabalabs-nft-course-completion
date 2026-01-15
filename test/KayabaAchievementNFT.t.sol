@@ -66,3 +66,8 @@ contract KayabaAchievementNFTTest is Test {
             "https://metadata.kayabalabs.com/hackathon"
         );
         
+         assertEq(nft.totalSupply(), 3);
+        assertEq(nft.ownerOf(0), student1);
+        assertEq(nft.ownerOf(1), student2);
+    }
+    
