@@ -48,3 +48,18 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
     ) ERC721(name, symbol) Ownable(msg.sender) {
         _baseTokenURI = baseURI;
     }
+
+    /**
+     * @dev Mint achievement NFT to a student
+     * @param to Address of the recipient
+     * @param achievementType Type of achievement
+     * @param details Additional details (course name, hackathon name, etc.)
+     * @param metadataURI Specific metadata URI for this token
+     */
+    function mintAchievement(
+        address to,
+        AchievementType achievementType,
+        string memory details,
+        string memory metadataURI
+    ) public payable returns (uint256) {
+        require(msg.value >= MINT_FEE, "Insufficient minting fee");
