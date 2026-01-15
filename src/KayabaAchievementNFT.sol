@@ -9,4 +9,15 @@ import "..lib/openzeppelin-contracts/contracts/utils/Strings.sol";
 
 import "..lib/openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
-contract 
+contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
+    using Strings for uint256;
+
+    uint256 private _nextTokenId;
+    uint256 public constant MINT_FEE = 0.0003 ether; // ~$0.50 on L2s (adjust based on ETH price)
+    
+    // Achievement types
+    enum AchievementType {
+        COURSE_COMPLETION,
+        HACKATHON_WINNER,
+        HACKATHON_PARTICIPANT
+    }
