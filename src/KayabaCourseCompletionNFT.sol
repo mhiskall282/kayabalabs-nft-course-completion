@@ -177,3 +177,26 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
     function setBaseURI(string memory baseURI) public onlyOwner {
         _baseTokenURI = baseURI;
     }
+
+    /**
+     * @dev Get complete certificate information for a token
+     */
+    function getCertificateInfo(uint256 tokenId) 
+        public 
+        view 
+        returns (
+            string memory studentId,
+            string memory course,
+            string memory date,
+            address wallet
+        ) 
+    {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        StudentInfo memory info = studentInfo[tokenId];
+        return (
+            info.studentId,
+            info.courseName,
+            info.completionDate,
+            ownerOf(tokenId)
+        );
+    }
