@@ -86,3 +86,14 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
             courseName: course,
             completionDate: date
         });
+
+        
+        emit CertificateMinted(to, tokenId, studentId, course, date);
+         
+        // Refund excess payment
+        if (msg.value > MINT_FEE) {
+            payable(msg.sender).transfer(msg.value - MINT_FEE);
+        }
+        
+        return tokenId;
+    }
