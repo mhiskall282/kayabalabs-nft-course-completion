@@ -97,3 +97,23 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         
         return tokenId;
     }
+
+
+    
+    /**
+     * @dev Soulbound: Prevent transfers (certificates are non-transferable)
+     */
+    function _update(
+        address to,
+        uint256 tokenId,
+        address auth
+    ) internal virtual override returns (address) {
+        address from = _ownerOf(tokenId);
+        
+        // Allow minting (from address(0)) but block transfers
+        if (from != address(0) && to != address(0)) {
+            revert("Certificate is soulbound and cannot be transferred");
+        }
+        
+        return super._update(to, tokenId, auth);
+    }
