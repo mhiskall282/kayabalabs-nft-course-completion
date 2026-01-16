@@ -232,3 +232,11 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         
         return certificates;
     }
+
+    
+    /**
+     * @dev Get total minted certificates
+     */
+    function totalSupply() public view returns (uint256) {
+        return _nextTokenId;
+    }
