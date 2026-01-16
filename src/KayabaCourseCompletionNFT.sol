@@ -25,3 +25,30 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         string courseName;     // Course completed
         string completionDate; // Date of completion
     }
+
+    
+    uint256 private _nextTokenId;
+    uint256 public constant MINT_FEE = 0.0003 ether; // ~$0.50 on L2s
+    
+    // Mapping from token ID to student information
+    mapping(uint256 => StudentInfo) public studentInfo;
+    
+    // Base URI for metadata (will be Pinata IPFS gateway)
+    string private _baseTokenURI;
+    
+    // Events
+    event CertificateMinted(
+        address indexed studentWallet,
+        uint256 indexed tokenId,
+        string studentId,
+        string courseName,
+        string completionDate
+    );
+
+    event FundsWithdrawn(address indexed owner, uint256 amount);
+    
+    constructor(
+        string memory baseURI
+    ) ERC721("Kayaba Labs Course Completion", "KAYABA-COURSE") Ownable(msg.sender) {
+        _baseTokenURI = baseURI;
+    }
