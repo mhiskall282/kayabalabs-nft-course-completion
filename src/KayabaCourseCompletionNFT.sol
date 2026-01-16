@@ -240,3 +240,28 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
     function totalSupply() public view returns (uint256) {
         return _nextTokenId;
     }
+
+// Override functions
+    function _baseURI() internal view override returns (string memory) {
+        return _baseTokenURI;
+    }
+
+
+    function tokenURI(uint256 tokenId)
+        public
+        view
+        override(ERC721, ERC721URIStorage)
+        returns (string memory)
+    {
+        return super.tokenURI(tokenId);
+    }
+
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(ERC721, ERC721URIStorage)
+        returns (bool)
+    {
+        return super.supportsInterface(interfaceId);
+    }
+}
