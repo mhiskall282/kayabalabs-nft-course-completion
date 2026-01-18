@@ -1,3 +1,6 @@
+#### Track Self-Mints:
+
+```bash
 cast call $CONTRACT_ADDRESS "balanceOf(address)" STUDENT_WALLET --rpc-url $SCROLL_MAINNET_RPC_URL
 
 # Get student's certificate details
