@@ -1,7 +1,10 @@
+cast balance $CONTRACT_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
+```
 
 ### Withdraw Fees (Monthly Recommended)
 
 ```bash
+# Withdraw all collected fees to your wallet
 cast send $CONTRACT_ADDRESS \
     "withdrawFees()" \
     --rpc-url $SCROLL_MAINNET_RPC_URL \
