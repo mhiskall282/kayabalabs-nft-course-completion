@@ -1,3 +1,8 @@
+echo "Fees Collected: $BALANCE wei"
+echo "Revenue (USD): Approximately $$(echo "scale=2; $TOTAL * 0.50" | bc)"
+echo ""
+echo "View on OpenSea: https://opensea.io/collection/..."
+echo "View on Explorer: https://scrollscan.com/address/$CONTRACT_ADDRESS"
 ```
 
 ---
