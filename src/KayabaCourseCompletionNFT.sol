@@ -83,3 +83,4 @@ uint256 tokenId = _nextTokenId++;
                 "-",
                 _padNumber(tokenId + 1, 4)
             )
+        );
