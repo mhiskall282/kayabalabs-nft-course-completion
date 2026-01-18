@@ -1,8 +1,11 @@
+```
+Subject: 🎉 Congratulations! Claim Your Certificate
 
 Hi [Student Name],
 
 You've completed the Solidity Fundamentals course!
 
+CLAIM YOUR NFT CERTIFICATE:
 👉 https://kayabalabs.com/mint-certificate
 
 Requirements:
