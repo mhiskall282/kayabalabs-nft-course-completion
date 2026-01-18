@@ -1,3 +1,9 @@
+cast send $CONTRACT_ADDRESS \
+    "withdrawFees()" \
+    --rpc-url $SCROLL_MAINNET_RPC_URL \
+    --private-key $PRIVATE_KEY
+
+# Verify withdrawal
 cast balance YOUR_WALLET_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
 ```
 
