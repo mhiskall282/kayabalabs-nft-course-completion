@@ -1,7 +1,11 @@
+# Bulk mint
+cast send $CONTRACT_ADDRESS \
+    "batchMintCertificates(address[],string,string[])" \
     "$WALLETS" \
     "$COURSE" \
     "$DATES" \
     --rpc-url $SCROLL_MAINNET_RPC_URL \
+    --private-key $PRIVATE_KEY
 
 echo "✅ Certificates minted for $(echo $WALLETS | grep -o '0x' | wc -l) students"
 ```
