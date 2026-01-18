@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mint Your Certificate - Kayaba Labs</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"></script>
+</head>
+<body>
+    <h1>🎓 Claim Your Certificate</h1>
+    
+    <div id="app">
+        <p>Course: Solidity Fundamentals</p>
+        <p>Cost: $0.50 (0.0003 ETH + gas)</p>
+        
+        <button onclick="mintCertificate()">Mint My Certificate</button>
+        <p id="status"></p>
+    </div>
+
+    <script>
+        const CONTRACT_ADDRESS = "0x5f303F0F87a0A64292C784A3De47CB59edF4035C";
+        const ABI = [
+            "function mintCertificate(address,string,string) payable returns (uint256, string)"
+        ];
+
+        async function mintCertificate() {
+            try {
+                if (!window.ethereum) {
+                    alert("Please install MetaMask!");
+                    return;
+                }
+
+                const provider = new ethers.providers.Web3Provider(window.ethereum);
+                await provider.send("eth_requestAccounts", []);
+                const signer = provider.getSigner();
+                const address = await signer.getAddress();
+                
+                const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+                
+                document.getElementById('status').innerText = "Minting certificate...";
+                
+                const tx = await contract.mintCertificate(
+                    address,
+                    "Solidity Fundamentals",
+                    "January 18, 2026",
+                    { value: ethers.utils.parseEther("0.0003") }
+                );
+                
+                document.getElementById('status').innerText = "Waiting for confirmation...";
+                await tx.wait();
+                
+                document.getElementById('status').innerText = "✅ Certificate minted successfully!";
+                
+            } catch (error) {
+                document.getElementById('status').innerText = "❌ Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
