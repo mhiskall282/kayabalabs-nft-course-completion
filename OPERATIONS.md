@@ -4,6 +4,8 @@ cast call $CONTRACT_ADDRESS "balanceOf(address)" STUDENT_WALLET --rpc-url $SCROL
 cast call $CONTRACT_ADDRESS "getCertificateInfo(uint256)" TOKEN_ID --rpc-url $SCROLL_MAINNET_RPC_URL
 ```
 
+---
+
 ### Option 2: Bulk Mint (You Mint, They Pay via Stripe)
 
 **When to use:** Most students (easier, better UX)
