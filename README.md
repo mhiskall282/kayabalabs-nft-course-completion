@@ -34,6 +34,10 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+- Completion date
+- Token ownership
+
+**Off-Chain (IPFS):**
 - Metadata JSON
 - Additional attributes
 
