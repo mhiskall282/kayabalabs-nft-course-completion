@@ -40,6 +40,9 @@ $ forge snapshot
 ```
 
 ### Anvil
+### Prerequisites
+
+```bash
 # Install Foundry
 curl -L https://foundry.paradigm.xyz | bash
 foundryup
