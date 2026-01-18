@@ -10,6 +10,9 @@ Foundry consists of:
 - **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
 ## Documentation
+- ✅ **On-Chain Storage** - Student ID, course name, and completion date stored on blockchain
+- ✅ **IPFS Metadata** - Images and additional data stored on decentralized storage
+- ✅ **OpenSea Compatible** - Viewable on major NFT marketplaces
 
 ---
 
