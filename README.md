@@ -42,7 +42,8 @@ $ forge snapshot
 ### Anvil
 
 ```shell
-$ anvil
+# Install Node.js (for scripts)
+# Ubuntu/WSL:
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
