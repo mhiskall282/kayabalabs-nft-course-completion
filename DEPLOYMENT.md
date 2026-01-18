@@ -33,6 +33,101 @@ Before deploying to mainnet, ensure you have:
 
 ### Step 1: Prepare Environment
 
+```bash
+
+# Network RPC URLs
+SCROLL_MAINNET_RPC_URL=https://rpc.scroll.io
+BASE_MAINNET_RPC_URL=https://mainnet.base.org
+ARBITRUM_MAINNET_RPC_URL=https://arb1.arbitrum.io/rpc
+OPTIMISM_MAINNET_RPC_URL=https://mainnet.optimism.io
+POLYGON_MAINNET_RPC_URL=https://polygon-rpc.com
+
+# Block Explorer API Keys (for verification)
+SCROLLSCAN_API_KEY=your_api_key_here
+BASESCAN_API_KEY=your_api_key_here
+ARBISCAN_API_KEY=your_api_key_here
+OPTIMISM_API_KEY=your_api_key_here
+POLYGONSCAN_API_KEY=your_api_key_here
+
+# Metadata URL (from Pinata/Lighthouse)
+METADATA_URI=https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreia6rxkezois2eymzxbikacx5egnrfvteqsky6gcswscjzmlummccu
+
+# Course prefix for student IDs
+COURSE_PREFIX=KL-SOL
+```
+
+Save and exit (Ctrl+X, Y, Enter)
+
+```bash
+# Load environment variables
+source .env
+```
+
+### Step 3: Get Mainnet ETH
+
+#### For Scroll:
+1. **Bridge from Ethereum:**
+   - Go to: https://scroll.io/bridge
+   - Connect wallet
+   - Bridge 0.01 ETH (enough for deployment + several mints)
+   - Wait ~15 minutes
+
+2. **Or Buy Direct:**
+   - Binance/OKX: Withdraw to Scroll network
+   - Use DEX: Swap on Scroll
+
+#### For Base:
+1. **Bridge from Ethereum:**
+   - Go to: https://bridge.base.org
+   - Bridge 0.01 ETH
+   
+2. **Or Coinbase:**
+   - Withdraw directly to Base network
+
+#### For Other Networks:
+- Use official bridges or CEX withdrawals
+
+### Step 4: Verify Your Balance
+
+```bash
+# Check balance on Scroll
+cast balance YOUR_WALLET_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
+
+# Check balance on Base
+cast balance YOUR_WALLET_ADDRESS --rpc-url $BASE_MAINNET_RPC_URL
+```
+
+Should show at least `10000000000000000` (0.01 ETH)
+
+### Step 5: Review Deployment Script
+
+```bash
+cat script/DeployCourseNFT.s.sol
+```
+
+Verify:
+- ✅ Correct metadata URI
+- ✅ Correct course prefix (KL-SOL)
+- ✅ Network RPC URL matches your target
+
+### Step 6: Final Contract Check
+
+```bash
+# Clean build
+forge clean
+
+# Build contract
+forge build
+
+# Should compile successfully with no errors
+```
+
+### Step 7: Deploy to Mainnet
+
+**For Scroll:**
+
+```bash
+forge script script/DeployCourseNFT.s.sol:DeployCourseNFT \
     --rpc-url $SCROLL_MAINNET_RPC_URL \
     --broadcast \
     --verify \
