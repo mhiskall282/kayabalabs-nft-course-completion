@@ -166,3 +166,6 @@ function batchMintCertificates(
             studentIds[i] = studentId;
             emit CertificateMinted(recipients[i], tokenId, studentId, course, dates[i]);
         }
+        
+        return studentIds;
+    }
