@@ -1,3 +1,17 @@
+### "I lost access to my wallet"
+
+**Response:**
+```
+Unfortunately, we cannot recover access to your wallet.
+
+HOWEVER, we can mint a new certificate to a new wallet address:
+1. Create a new MetaMask wallet
+2. Send us the new address
+3. We'll mint a duplicate certificate (one-time exception)
+
+For future: ALWAYS backup your seed phrase!
+```
+
 ---
 
 ## 📈 Growth & Scaling
