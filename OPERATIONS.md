@@ -7,6 +7,7 @@
 METHOD 2 - OpenSea:
 Go to: https://opensea.io/assets/scroll/{CONTRACT_ADDRESS}/{TOKEN_ID}
 
+METHOD 3 - Check on Explorer:
 Go to: https://scrollscan.com/token/{CONTRACT_ADDRESS}?a={TOKEN_ID}
 
 Still don't see it? Reply with your wallet address and we'll check.
