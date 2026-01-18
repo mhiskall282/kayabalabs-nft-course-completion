@@ -47,3 +47,6 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         string courseName,
         string completionDate
     );
+
+    event FundsWithdrawn(address indexed owner, uint256 amount);
+    
