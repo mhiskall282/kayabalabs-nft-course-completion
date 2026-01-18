@@ -6,6 +6,10 @@ Congratulations on completing {COURSE_NAME}!
 Claim your blockchain certificate:
 👉 {MINT_URL}
 
+Subject: ✅ Your Certificate is Ready!
+
+Hi {STUDENT_NAME},
+
 Your certificate has been minted!
 
 🆔 Student ID: {STUDENT_ID}
