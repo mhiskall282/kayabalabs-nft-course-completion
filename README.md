@@ -67,6 +67,11 @@ $ cast --help
 
 ---
 
+---
+
+## 📞 Support
+
+For technical issues:
 2. Check OPERATIONS.md for common questions
 3. Review contract code and comments
 4. Test on Sepolia before mainnet
