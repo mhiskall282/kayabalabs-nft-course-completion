@@ -1,3 +1,8 @@
+    "Solidity Fundamentals" \
+    "January 18, 2026" \
+    --value 0.0003ether \
+    --rpc-url $SCROLL_MAINNET_RPC_URL \
+    --private-key $PRIVATE_KEY
 ```
 
 ### 2. Check Student's Certificate
