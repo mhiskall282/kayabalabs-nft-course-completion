@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+- [ ] Integrate Stripe for bulk mint payments
+- [ ] Create email templates for notifications
+- [ ] Setup automated weekly bulk mint script
+- [ ] Create student wallet collection form
 
 ### Phase 3: Enhancement
 - [ ] Build admin dashboard for monitoring
