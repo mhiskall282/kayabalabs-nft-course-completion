@@ -1,3 +1,7 @@
+6. **Send confirmation emails:**
+
+```
+Subject: ✅ Your Certificate Has Been Minted!
 
 Your NFT certificate has been minted to your wallet!
 
