@@ -21,6 +21,10 @@ https://book.getfoundry.sh/
 $ forge build
 ```
 
+**File:** `src/KayabaCourseCompletionNFT.sol`
+
+**Core Functions:**
+
 ```solidity
 // Student self-mint (pays $0.50)
 function mintCertificate(address to, string course, string date) 
