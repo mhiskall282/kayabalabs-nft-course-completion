@@ -27,4 +27,6 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         string completionDate; // Date of completion
     }
 
+    uint256 private _nextTokenId;
+    uint256 public constant MINT_FEE = 0.0003 ether; // ~$0.50 on L2s
     
