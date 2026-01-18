@@ -21,6 +21,12 @@ https://book.getfoundry.sh/
 $ forge build
 ```
 
+---
+
+## 🏗️ Architecture
+
+### Smart Contract
+
 **File:** `src/KayabaCourseCompletionNFT.sol`
 
 **Core Functions:**
