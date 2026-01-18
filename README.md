@@ -34,6 +34,11 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+   - Explorer: https://arbiscan.io
+   - OpenSea: ✅ Supported
+   - Established ecosystem
+
+---
 
 ## 📁 Project Structure
 
