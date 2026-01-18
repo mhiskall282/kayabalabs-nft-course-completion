@@ -1,9 +1,12 @@
+2. **Students complete course**
 
 3. **Collect payment via Stripe:**
 
 ```
 Product: NFT Course Certificate
 Price: $0.50
+Description: Blockchain certificate minted to your wallet
+```
 
 4. **Export paid students from database**
 
