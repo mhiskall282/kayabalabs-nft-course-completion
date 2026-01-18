@@ -1,3 +1,9 @@
+## 📧 Email Templates
+
+### Course Completion (Self-Mint Option)
+
+```
+Subject: 🎉 Claim Your Certificate NFT
 
 Hi {STUDENT_NAME},
 
