@@ -65,6 +65,11 @@ $ anvil --help
 $ cast --help
 ```
 
+---
+
+## 🔐 Security Considerations
+
+### Implemented ✅
 - ✅ Ownable pattern (only owner can batch mint)
 - ✅ Fee validation (requires exact payment)
 - ✅ Soulbound transfers (prevents selling)
