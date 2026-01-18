@@ -34,6 +34,12 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+## 💰 Economics
+
+### Minting Fee: $0.50 (0.0003 ETH)
+
+**Revenue Model:**
+
 **Option 1: Self-Mint (Student Pays)**
 - Student pays: $0.50 + gas (~$0.01-0.05)
 - You collect: $0.50 per certificate
