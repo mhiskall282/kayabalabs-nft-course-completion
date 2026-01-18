@@ -34,6 +34,13 @@ Before deploying to mainnet, ensure you have:
 ### Step 1: Prepare Environment
 
 ```bash
+# Navigate to project directory
+cd /mnt/c/Users/user/desktop/kayabalabs-nft
+
+# Ensure .env file exists
+ls -la .env
+```
+PRIVATE_KEY=your_private_key_here
 
 # Network RPC URLs
 SCROLL_MAINNET_RPC_URL=https://rpc.scroll.io
