@@ -15,3 +15,16 @@ import "@openzeppelin/contracts/utils/Strings.sol";
  * - Soulbound (non-transferable)
  * - $0.50 minting fee
  */
+
+
+
+contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
+    using Strings for uint256;
+
+    struct StudentInfo {
+        string studentId;      // Auto-generated: KL-SOL-0001, KL-SOL-0002, etc.
+        string courseName;     // Course completed
+        string completionDate; // Date of completion
+    }
+
+    
