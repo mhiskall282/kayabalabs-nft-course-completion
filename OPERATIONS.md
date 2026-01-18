@@ -1,3 +1,4 @@
+WALLETS='["0x1234567890abcdef1234567890abcdef12345678","0xabcdef1234567890abcdef1234567890abcdef12","0x567890abcdef1234567890abcdef1234567890ab"]'
 # Bulk mint
 cast send $CONTRACT_ADDRESS \
     "batchMintCertificates(address[],string,string[])" \
