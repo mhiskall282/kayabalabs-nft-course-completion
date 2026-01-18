@@ -6,6 +6,10 @@ Congratulations on completing {COURSE_NAME}!
 Claim your blockchain certificate:
 👉 {MINT_URL}
 
+
+Questions? Reply to this email.
+
+Best,
 Kayaba Labs Team
 ```
 
