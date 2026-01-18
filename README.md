@@ -34,6 +34,10 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+
+**Option 2: Bulk Mint (You Pay Gas, Collect via Stripe)**
+- Student pays: $0.50 via Stripe
+- Your cost: ~$1-5 per 100 students (gas)
 - Net: $45-49 per 100 students
 
 **Recommended:** Include $0.50 in course price, bulk mint for best UX
