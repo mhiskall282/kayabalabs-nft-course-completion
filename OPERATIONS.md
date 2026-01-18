@@ -1,3 +1,7 @@
+cast call $CONTRACT_ADDRESS "getCertificateInfo(uint256)" TOKEN_ID --rpc-url $SCROLL_MAINNET_RPC_URL
+```
+
+### 3. Find All Certificates for a Wallet
 
 ```bash
 # Get all token IDs owned by wallet
