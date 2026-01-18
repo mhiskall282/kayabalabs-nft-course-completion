@@ -5,6 +5,201 @@
 Before deploying to mainnet, ensure you have:
 
 - [ ] Private key backed up securely
+    --rpc-url $SCROLL_MAINNET_RPC_URL \
+    --broadcast \
+    --verify \
+    -vvvv
+```
+
+**For Base:**
+
+```bash
+forge script script/DeployCourseNFT.s.sol:DeployCourseNFT \
+    --rpc-url $BASE_MAINNET_RPC_URL \
+    --broadcast \
+    --verify \
+    -vvvv
+```
+
+**For Arbitrum:**
+
+```bash
+forge script script/DeployCourseNFT.s.sol:DeployCourseNFT \
+    --rpc-url $ARBITRUM_MAINNET_RPC_URL \
+    --broadcast \
+    --verify \
+    -vvvv
+```
+
+### Step 8: Save Contract Address
+
+After deployment, you'll see:
+
+```
+Contract Address: 0x1234567890abcdef1234567890abcdef12345678
+```
+
+**CRITICAL: Save this address immediately!**
+
+```bash
+# Save to .env
+echo "CONTRACT_ADDRESS=0x1234567890abcdef1234567890abcdef12345678" >> .env
+source .env
+
+# Also save to a file
+echo "CONTRACT_ADDRESS=0x1234567890abcdef1234567890abcdef12345678" > contract-address.txt
+echo "NETWORK=scroll" >> contract-address.txt
+echo "DEPLOYED_AT=$(date)" >> contract-address.txt
+```
+
+### Step 9: Verify Contract (if auto-verify failed)
+
+**For Scroll:**
+
+```bash
+forge verify-contract \
+    $CONTRACT_ADDRESS \
+    src/KayabaCourseCompletionNFT.sol:KayabaCourseCompletionNFT \
+    --chain-id 534352 \
+    --constructor-args $(cast abi-encode "constructor(string,string)" "$METADATA_URI" "$COURSE_PREFIX") \
+    --etherscan-api-key $SCROLLSCAN_API_KEY
+```
+
+**For Base:**
+
+```bash
+forge verify-contract \
+    $CONTRACT_ADDRESS \
+    src/KayabaCourseCompletionNFT.sol:KayabaCourseCompletionNFT \
+    --chain-id 8453 \
+    --constructor-args $(cast abi-encode "constructor(string,string)" "$METADATA_URI" "$COURSE_PREFIX") \
+    --etherscan-api-key $BASESCAN_API_KEY
+```
+
+### Step 10: Test Mint First Certificate
+
+```bash
+# Mint your first mainnet certificate
+cast send $CONTRACT_ADDRESS \
+    "mintCertificate(address,string,string)" \
+    YOUR_WALLET_ADDRESS \
+    "Solidity Fundamentals" \
+    "January 18, 2026" \
+    --value 0.0003ether \
+    --rpc-url $SCROLL_MAINNET_RPC_URL \
+    --private-key $PRIVATE_KEY
+```
+
+### Step 11: Verify Everything Works
+
+**Check contract on block explorer:**
+
+Scroll: `https://scrollscan.com/address/$CONTRACT_ADDRESS`
+Base: `https://basescan.org/address/$CONTRACT_ADDRESS`
+
+**Verify certificate info:**
+
+```bash
+cast call $CONTRACT_ADDRESS "getStudentId(uint256)" 0 --rpc-url $SCROLL_MAINNET_RPC_URL
+```
+
+Should return: `KL-SOL-0001`
+
+**Check OpenSea (wait 15-30 minutes):**
+
+```
+https://opensea.io/assets/scroll/$CONTRACT_ADDRESS/0
+```
+
+### Step 12: Document Deployment
+
+Create `DEPLOYMENT_INFO.md`:
+
+```markdown
+# Deployment Information
+
+**Network:** Scroll Mainnet
+**Contract Address:** 0x1234567890abcdef1234567890abcdef12345678
+**Deployed By:** 0xYourWalletAddress
+**Deployment Date:** January 18, 2026
+**Deployment TX:** 0xTransactionHash
+**Gas Used:** XXX
+**Deployment Cost:** 0.XXX ETH
+
+## Links
+- Contract: https://scrollscan.com/address/0x...
+- OpenSea: https://opensea.io/collection/...
+- Metadata: https://coral-genuine-koi-966.mypinata.cloud/ipfs/...
+
+## Configuration
+- Course Prefix: KL-SOL
+- Mint Fee: 0.0003 ETH (~$0.50)
+- Total Supply: Unlimited
+- Soulbound: Yes
+```
+
+---
+
+## ⚠️ Important Security Notes
+
+### 🔒 Protect Your Private Key
+
+**NEVER:**
+- ❌ Share your private key
+- ❌ Commit .env to git
+- ❌ Post it in Discord/Telegram
+- ❌ Store in plain text online
+
+**DO:**
+- ✅ Keep .env in .gitignore
+- ✅ Use hardware wallet for large amounts
+- ✅ Backup private key offline (paper/encrypted USB)
+- ✅ Use different wallet for deployment vs personal funds
+
+### 🔐 .gitignore Setup
+
+Ensure `.gitignore` contains:
+
+```
+.env
+*.env
+contract-address.txt
+broadcast/
+cache/
+out/
+```
+
+---
+
+## ✅ Post-Deployment Checklist
+
+After successful deployment:
+
+- [ ] Contract address saved in multiple locations
+- [ ] Contract verified on block explorer
+- [ ] Test certificate minted successfully
+- [ ] Certificate visible on OpenSea (after 30 mins)
+- [ ] Metadata loads correctly
+- [ ] Image displays properly
+- [ ] Student ID auto-generation works (KL-SOL-0001)
+- [ ] Soulbound transfer prevention works
+- [ ] Owner can batch mint
+- [ ] Fees can be withdrawn
+- [ ] Deployment documented in DEPLOYMENT_INFO.md
+- [ ] Private key secured
+- [ ] .env file not committed to git
+
+---
+
+## 🆘 Troubleshooting
+
+### Issue: "Insufficient funds for gas"
+
+**Solution:**
+```bash
+# Check your balance
+cast balance YOUR_WALLET_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
+
 # Get more ETH from bridge or CEX
 ```
 
