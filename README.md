@@ -34,6 +34,9 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+
+**On-Chain (Smart Contract):**
+- Student ID (auto-generated)
 - Course name
 - Completion date
 - Token ownership
