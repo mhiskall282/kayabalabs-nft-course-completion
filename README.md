@@ -67,6 +67,11 @@ $ cast --help
 
 ---
 
+### Step 3: Verify OpenSea Integration (30 minutes)
+Wait 30 minutes, check if certificates appear on OpenSea
+
+### Step 4: Build Minting Page (2-4 hours)
+Create simple HTML page for student self-minting
 
 ### Step 5: Setup Payment Processing (2-3 hours)
 Integrate Stripe for bulk mint option
