@@ -65,7 +65,12 @@ $ anvil --help
 $ cast --help
 ```
 
+- [ ] Certificate renewal/expiration system
+- [ ] Cross-chain certificate bridge
+
 ---
+
+## 🎯 Immediate Next Steps
 
 ### Step 1: Deploy to Mainnet (1 hour)
 Follow `DEPLOYMENT.md` to deploy to Scroll or Base
