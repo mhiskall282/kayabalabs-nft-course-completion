@@ -1,3 +1,10 @@
+Create separate contracts for:
+
+
+Safe batch sizes:
+- **10-50 students:** Single transaction
+- **50-100 students:** Still fine, ~$1-2 gas
+- **100-500 students:** Consider 2-3 batches
 - **500+ students:** Split into 100-student batches
 
 ### Automation Opportunities
