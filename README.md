@@ -5,11 +5,8 @@
 Foundry consists of:
 
 - **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### Key Features
 
-## Documentation
 - ✅ **Auto-Generated Student IDs** - Unique IDs (KL-SOL-0001, KL-SOL-0002, etc.)
 - ✅ **Soulbound NFTs** - Cannot be transferred, ensuring authenticity
 - ✅ **Dual Minting Options** - Students self-mint OR admin bulk mints
