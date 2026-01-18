@@ -37,6 +37,10 @@ $ forge fmt
 
 ```shell
 $ forge snapshot
+```
+kayabalabs-nft/
+├── src/
+│   └── KayabaCourseCompletionNFT.sol    # Main contract
 ├── test/
 │   └── KayabaCourseCompletionNFT.t.sol  # Contract tests
 ├── script/
