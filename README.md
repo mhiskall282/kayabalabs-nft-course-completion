@@ -2,7 +2,7 @@
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+A blockchain-based certificate system that issues NFT credentials to students who complete courses at Kayaba Labs. Each certificate is a soulbound (non-transferable) NFT with auto-generated student IDs, stored permanently on the blockchain.
 
 - **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
 ### Key Features
