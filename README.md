@@ -67,6 +67,10 @@ $ cast --help
 
 ---
 
+
+- [ ] Contract deployed to mainnet
+- [ ] 50+ certificates minted
+- [ ] $25+ in fees collected
 - [ ] 90%+ student satisfaction
 - [ ] <5 support tickets
 - [ ] Certificates visible on OpenSea
