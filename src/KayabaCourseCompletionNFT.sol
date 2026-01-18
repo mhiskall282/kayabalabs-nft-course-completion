@@ -156,4 +156,11 @@ function batchMintCertificates(
             _safeMint(recipients[i], tokenId);
             _setTokenURI(tokenId, _metadataURI);
             
-            
+            // Store student information
+            studentInfo[tokenId] = StudentInfo({
+                studentId: studentId,
+                courseName: course,
+                completionDate: dates[i]
+            });
+
+            studentIds[i] = studentId;
