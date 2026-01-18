@@ -4,6 +4,7 @@ Kayaba Labs Team
 
 ---
 
+## 💰 Fee Management
 
 ### Check Collected Fees
 
