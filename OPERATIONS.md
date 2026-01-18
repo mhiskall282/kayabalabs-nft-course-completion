@@ -1,3 +1,6 @@
+
+This guide covers day-to-day operations for managing your NFT certificate system after deployment.
+
 ---
 
 ## 🎓 Student Certificate Workflow
