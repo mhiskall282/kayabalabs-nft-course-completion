@@ -173,3 +173,7 @@ function batchMintCertificates(
     /**
      * @dev Withdraw accumulated or collected funds (only owner)
      */
+
+    function withdrawFees() public onlyOwner {
+        uint256 balance = address(this).balance;
+        require(balance > 0, "No funds to withdraw");
