@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+
+### Future Enhancements
+- [ ] Multi-signature wallet for withdrawals
+- [ ] Rate limiting on minting
 - [ ] Upgradeable proxy pattern (if needed)
 
 ---
