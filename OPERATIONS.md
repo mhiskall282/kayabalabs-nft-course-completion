@@ -1,3 +1,11 @@
+- OpenSea: {OPENSEA_LINK}
+- Explorer: {EXPLORER_LINK}
+
+The certificate is in your wallet:
+{WALLET_ADDRESS}
+
+Open MetaMask → NFTs tab to see it!
+
 Congratulations,
 Kayaba Labs Team
 ```
