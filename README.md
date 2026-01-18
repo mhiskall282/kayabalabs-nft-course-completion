@@ -67,6 +67,11 @@ $ cast --help
 
 ---
 
+## 📚 Documentation
+
+- **README.md** (this file) - Project overview and status
+- **DEPLOYMENT.md** - Step-by-step mainnet deployment guide
+- **OPERATIONS.md** - Day-to-day operations and student management
 - **Contract Comments** - Inline documentation in Solidity code
 
 ---
