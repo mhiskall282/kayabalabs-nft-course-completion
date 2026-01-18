@@ -18,6 +18,7 @@ contract KayabaCourseCompletionNFTTest is Test {
         
         nft = new KayabaCourseCompletionNFT(
             "https://gateway.lighthouse.storage/ipfs/metadata.json",
+            "KL-SOL"
         );
         
         vm.deal(student1, 10 ether);
