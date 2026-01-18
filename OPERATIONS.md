@@ -6,6 +6,12 @@ Congratulations on completing {COURSE_NAME}!
 Claim your blockchain certificate:
 👉 {MINT_URL}
 
+Your certificate has been minted!
+
+🆔 Student ID: {STUDENT_ID}
+📚 Course: {COURSE_NAME}
+📅 Completed: {COMPLETION_DATE}
+
 - OpenSea: {OPENSEA_LINK}
 - Explorer: {EXPLORER_LINK}
 
