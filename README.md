@@ -65,6 +65,11 @@ $ anvil --help
 $ cast --help
 ```
 
+- ✅ Ownable pattern (only owner can batch mint)
+- ✅ Fee validation (requires exact payment)
+- ✅ Soulbound transfers (prevents selling)
+- ✅ Input validation (non-empty course names)
+- ✅ Excess payment refunds
 
 ### Future Enhancements
 - [ ] Multi-signature wallet for withdrawals
