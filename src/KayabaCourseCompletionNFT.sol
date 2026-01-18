@@ -88,3 +88,10 @@ uint256 tokenId = _nextTokenId++;
          _safeMint(to, tokenId);
         _setTokenURI(tokenId, _metadataURI);
         
+
+        // Store student information
+        studentInfo[tokenId] = StudentInfo({
+            studentId: studentId,
+            courseName: course,
+            completionDate: date
+        });
