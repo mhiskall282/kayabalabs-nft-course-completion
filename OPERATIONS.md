@@ -1,8 +1,10 @@
+✅ $0.50 in ETH on Scroll network
 ✅ ~5 minutes to complete
 
 Your certificate will be:
 - Permanently stored on blockchain
 - Visible on OpenSea
+- Non-transferable (soulbound)
 
 Need help? Reply to this email.
 
