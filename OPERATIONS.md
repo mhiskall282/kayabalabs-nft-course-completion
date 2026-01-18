@@ -1,4 +1,10 @@
 
+---
+
+## 🆘 Student Support FAQ
+
+### "I don't have a wallet"
+
 ```
 No problem! Here's how to get started:
 
