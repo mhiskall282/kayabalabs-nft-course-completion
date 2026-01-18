@@ -10,6 +10,9 @@ Foundry consists of:
 - **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
 ## Documentation
+- ✅ **Auto-Generated Student IDs** - Unique IDs (KL-SOL-0001, KL-SOL-0002, etc.)
+- ✅ **Soulbound NFTs** - Cannot be transferred, ensuring authenticity
+- ✅ **Dual Minting Options** - Students self-mint OR admin bulk mints
 - ✅ **Fee Collection** - $0.50 fee per self-mint, free for bulk mints
 - ✅ **On-Chain Storage** - Student ID, course name, and completion date stored on blockchain
 - ✅ **IPFS Metadata** - Images and additional data stored on decentralized storage
