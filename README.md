@@ -34,6 +34,10 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+   - Backed by Coinbase
+
+3. **Arbitrum**
+   - RPC: `https://arb1.arbitrum.io/rpc`
    - Explorer: https://arbiscan.io
    - OpenSea: ✅ Supported
    - Established ecosystem
