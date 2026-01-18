@@ -1,4 +1,10 @@
 
+```
+No problem! Here's how to get started:
+
+1. Install MetaMask: https://metamask.io
+2. Create new wallet (save your seed phrase!)
+3. Get your wallet address (0x...)
 4. Send it to us or use it to mint
 
 Video guide: {YOUR_TUTORIAL_LINK}
