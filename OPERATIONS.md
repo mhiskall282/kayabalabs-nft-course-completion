@@ -1,3 +1,21 @@
+
+Track these monthly:
+
+| Metric | Target | Actual |
+|--------|--------|--------|
+| Certificates Minted | 100+ | ___ |
+| Self-Mint Rate | 70% | ___ |
+| Bulk Mint Rate | 30% | ___ |
+| Fees Collected | $50+ | ___ |
+| Support Tickets | <5 | ___ |
+| OpenSea Views | 500+ | ___ |
+| Student Satisfaction | 4.5/5 | ___ |
+
+---
+
+## 🎯 Monthly Checklist
+
+- [ ] Withdraw collected fees
 - [ ] Review total certificates minted
 - [ ] Check for failed transactions
 - [ ] Update student records
