@@ -1,10 +1,9 @@
-## Foundry
+# Kayaba Labs NFT Course Completion Certificate System
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 🎓 Project Overview
 
 A blockchain-based certificate system that issues NFT credentials to students who complete courses at Kayaba Labs. Each certificate is a soulbound (non-transferable) NFT with auto-generated student IDs, stored permanently on the blockchain.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
 ### Key Features
 
 - ✅ **Auto-Generated Student IDs** - Unique IDs (KL-SOL-0001, KL-SOL-0002, etc.)
