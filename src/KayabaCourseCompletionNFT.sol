@@ -256,3 +256,24 @@ function getStudentCertificates(address student)
         
         return certificates;
     }
+
+    /**
+     * @dev Get total minted certificates
+     */
+    function totalSupply() public view returns (uint256) {
+        return _nextTokenId;
+    }
+
+
+    /**
+     * @dev Helper function to pad numbers with leading zeros
+     * @param num Number to pad
+     * @param length Desired length (e.g., 4 for 0001)
+     */
+
+    function _padNumber(uint256 num, uint256 length) internal pure returns (string memory) {
+        bytes memory numStr = bytes(num.toString());
+        if (numStr.length >= length) {
+            return string(numStr);
+        }
+        
