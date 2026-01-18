@@ -34,10 +34,12 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+- Course name
 - Completion date
 - Token ownership
 
 **Off-Chain (IPFS):**
+- Certificate image
 - Metadata JSON
 - Additional attributes
 
