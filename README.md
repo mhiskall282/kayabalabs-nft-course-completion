@@ -55,9 +55,10 @@ $ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --pri
 
 ```shell
 $ cast <subcommand>
+METADATA_URI=https://your-metadata-url
+COURSE_PREFIX=KL-SOL
 ```
 
-### Help
 ---
 
 ## ✅ Testing
