@@ -1,3 +1,7 @@
+    "$WALLETS" \
+    "$COURSE" \
+    "$DATES" \
+    --rpc-url $SCROLL_MAINNET_RPC_URL \
 
 echo "✅ Certificates minted for $(echo $WALLETS | grep -o '0x' | wc -l) students"
 ```
