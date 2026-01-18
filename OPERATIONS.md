@@ -1,3 +1,8 @@
+cast balance YOUR_WALLET_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
+```
+
+**Best Practice:** Withdraw monthly or when balance reaches threshold (e.g., $50+)
+
 ---
 
 ## 📊 Monitoring & Analytics
