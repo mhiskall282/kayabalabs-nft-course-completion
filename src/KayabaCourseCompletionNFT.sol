@@ -76,3 +76,10 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
 uint256 tokenId = _nextTokenId++;
 
 
+// Auto-generate student ID: KL-SOL-0001, KL-SOL-0002, etc.
+        string memory studentId = string(
+            abi.encodePacked(
+                coursePrefix,
+                "-",
+                _padNumber(tokenId + 1, 4)
+            )
