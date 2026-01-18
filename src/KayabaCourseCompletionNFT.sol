@@ -244,16 +244,15 @@ function getStudentCertificates(address student)
             }
         }
         
-        uint256[] memory certificateIds = new uint256[](count);
+        // Second pass: collect token IDs
+        uint256[] memory certificates = new uint256[](count);
         uint256 index = 0;
-        // Second pass: collect certificate IDs
         for (uint256 i = 0; i < total; i++) {
             if (_ownerOf(i) == student) {
-                certificateIds[index++] = i;
+                certificates[index] = i;
+                index++;
             }
         }
-        return certificateIds;
+        
+        return certificates;
     }
-    /**
-     * @dev Pad number with leading zeros
-     */
