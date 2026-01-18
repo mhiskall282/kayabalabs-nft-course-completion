@@ -46,6 +46,10 @@ $ anvil
 ```
 
 ### Deploy
+
+```bash
+# Clone repository
+git clone <repository-url>
 cd kayabalabs-nft
 
 # Install dependencies
