@@ -20,6 +20,10 @@ https://book.getfoundry.sh/
 ```shell
 $ forge build
 ```
+- [x] Testing on Ethereum Sepolia
+- [x] Metadata structure defined
+- [x] Image uploaded to IPFS
+- [x] Test certificates minted successfully
 - [x] Documentation completed
 
 ### Current Stage: **Ready for Mainnet Deployment**
