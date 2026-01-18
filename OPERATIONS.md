@@ -1,4 +1,6 @@
 
+### Option 1: Student Self-Mint (They Pay $0.50)
+
 **When to use:** Student is crypto-savvy and wants instant certificate
 
 #### Process:
