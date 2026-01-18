@@ -1,4 +1,10 @@
 
+3. **Collect payment via Stripe:**
+
+```
+Product: NFT Course Certificate
+Price: $0.50
+
 4. **Export paid students from database**
 
 Create `students.csv`:
