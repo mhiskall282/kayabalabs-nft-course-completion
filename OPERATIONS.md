@@ -1,3 +1,8 @@
+
+### Check Collected Fees
+
+```bash
+# Check contract balance
 cast balance $CONTRACT_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
 ```
 
