@@ -1,3 +1,8 @@
+Email: _________________
+Wallet Address: _________________
+(Don't have one? Click here for guide)
+```
+
 2. **Students complete course**
 
 3. **Collect payment via Stripe:**
