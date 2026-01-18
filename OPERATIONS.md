@@ -1,3 +1,9 @@
+- OpenSea: https://opensea.io/assets/scroll/CONTRACT_ADDRESS/41
+- Explorer: https://scrollscan.com/token/CONTRACT_ADDRESS?a=41
+- Your Wallet: Open MetaMask → NFTs tab
+
+This certificate is soulbound and cannot be transferred.
+
 Congratulations!
 Kayaba Labs Team
 ```
