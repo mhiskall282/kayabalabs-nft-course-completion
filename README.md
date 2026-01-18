@@ -37,6 +37,10 @@ $ forge fmt
 
 ```shell
 $ forge snapshot
+│   └── DeployCourseNFT.s.sol            # Deployment script
+├── lib/
+│   ├── forge-std/                        # Foundry standard library
+│   └── openzeppelin-contracts/           # OpenZeppelin contracts
 ├── .env                                  # Environment variables (DO NOT COMMIT)
 ├── .gitignore                            # Git ignore file
 ├── foundry.toml                          # Foundry configuration
