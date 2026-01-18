@@ -1,3 +1,8 @@
+```
+
+### 4. Update Metadata URI (if needed)
+
+```bash
 # Only if you need to change metadata location
 cast send $CONTRACT_ADDRESS \
     "setMetadataURI(string)" \
