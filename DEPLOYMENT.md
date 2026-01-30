@@ -114,7 +114,7 @@ source .env
 cast balance YOUR_WALLET_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
 
 # Check balance on Base
-cast balance YOUR_WALLET_ADDRESS --rpc-url $BASE_MAINNET_RPC_URL
+cast balance 0x76764f8de65f6d2cd00987d9791b8c6af00c1911 --rpc-url $BASE_MAINNET_RPC_URL
 ```
 
 Should show at least `10000000000000000` (0.01 ETH)
