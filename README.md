@@ -302,10 +302,3 @@ Last Updated: January 30, 2026
 Version: 1.0.0
 
 ```
-
-### Small fixes you should also do (recommended)
-1) In your repo, make sure `.env` is in `.gitignore` (so you never commit it).  
-2) Update `DEPLOYMENT.md` to include Base mainnet deployed address + tx hash.  
-3) In `OPERATIONS.md`, add the Base contract address as the default “production contract”.
-
-If you paste your current `DEPLOYMENT.md` and `OPERATIONS.md`, I’ll rewrite those too with the Base mainnet details.
