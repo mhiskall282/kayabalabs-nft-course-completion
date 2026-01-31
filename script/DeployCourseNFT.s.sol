@@ -73,4 +73,3 @@ contract DeployCourseNFT is Script {
     }
 }
 
-// commit-marker-61
